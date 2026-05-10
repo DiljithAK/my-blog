@@ -1,4 +1,4 @@
-import { categories } from '../data/blogs'
+// import { categories } from '../data/blogs'
 import { SearchIcon } from './Icons'
 import { NavLink } from './NavLink'
 import { SocialLinks } from './SocialLinks'
