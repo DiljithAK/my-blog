@@ -44,15 +44,6 @@ export function HomePage() {
         <PostGrid posts={recentPosts} />
       </section>
 
-      <section className="content-section">
-        <SectionHeader
-          eyebrow="All Posts Snapshot"
-          title="A complete view of the writing library"
-          description="Every post uses the same reusable card design, making it easy to scan categories, engagement, and publishing dates."
-        />
-        <PostGrid posts={blogPosts.slice(0, 3)} />
-      </section>
-
       <NewsletterSection />
     </div>
   )

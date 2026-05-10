@@ -1,7 +1,7 @@
 export type Category =
   | 'Web Development'
   | 'AI Development'
-  | 'Blockchain Development'
+  | 'Blockchain'
   | 'Workplace Ethics'
   | 'Lifestyle'
 

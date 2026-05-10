@@ -3,7 +3,7 @@ export function ContactPage() {
     <div className="page-stack page-narrow">
       <section className="page-intro prose-panel">
         <p className="section-eyebrow">Contact</p>
-        <h1>Let’s talk about product building, frontend systems, and writing</h1>
+        <h1>Let’s talk...</h1>
         <p className="section-copy">
           Reach out for collaborations, speaking invites, mentorship
           conversations, or a thoughtful exchange on software craft.

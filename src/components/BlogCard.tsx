@@ -7,6 +7,16 @@ type BlogCardProps = {
   post: BlogPost
 }
 
+function getCardExcerpt(excerpt: string, maxWords = 100) {
+  const words = excerpt.trim().split(/\s+/)
+
+  if (words.length <= maxWords) {
+    return excerpt
+  }
+
+  return `${words.slice(0, maxWords).join(' ')}...`
+}
+
 export function BlogCard({ post }: BlogCardProps) {
   return (
     <article className="blog-card">
@@ -24,7 +34,7 @@ export function BlogCard({ post }: BlogCardProps) {
           </div>
 
           <h3>{post.title}</h3>
-          <p>{post.excerpt}</p>
+          <p>{getCardExcerpt(post.excerpt)}</p>
 
           <div className="blog-card-footer">
             <span>{post.publishedAt}</span>

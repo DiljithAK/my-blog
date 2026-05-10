@@ -5,7 +5,7 @@ export function NewsletterSection() {
         <p className="section-eyebrow">Contact Me</p>
         <h2>Stay in the loop with practical notes for builders.</h2>
         <p className="section-copy">
-          Drop your email to receive fresh posts on frontend systems, AI
+          Drop your email to receive fresh posts on frontend/backend systems, AI
           workflows, blockchain product thinking, and sustainable career habits.
         </p>
       </div>
