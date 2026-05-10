@@ -2,7 +2,7 @@ export function AboutPage() {
   return (
     <div className="page-stack page-narrow">
       <section className="page-intro prose-panel about-page-intro">
-        <p className="section-eyebrow">About Me</p>
+        <p className="section-eyebrow">About</p>
         <h1>Writing at the intersection of engineering craft and human growth</h1>
         <div className="about-page-copy">
           <p>

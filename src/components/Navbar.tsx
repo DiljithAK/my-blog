@@ -22,11 +22,14 @@ export function Navbar() {
           </div>
         </details> */}
 
-        <NavLink href="/about" className="nav-item">
-          About Me
+        <NavLink className="nav-item" href="/posts">
+          Explore
         </NavLink>
         <NavLink href="/contact" className="nav-item">
           Contact
+        </NavLink>
+        <NavLink href="/about" className="nav-item">
+          About
         </NavLink>
       </nav>
 
