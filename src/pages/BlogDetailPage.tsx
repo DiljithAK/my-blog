@@ -1,5 +1,6 @@
 import { blogPosts } from '../data/blogs'
 import { CommentIcon, HeartIcon } from '../components/Icons'
+import { PostImage } from '../components/PostImage'
 
 type BlogDetailPageProps = {
   slug: string
@@ -25,12 +26,7 @@ export function BlogDetailPage({ slug }: BlogDetailPageProps) {
   return (
     <div className="page-stack page-narrow">
       <article className="blog-detail">
-        <div
-          aria-label={post.imageLabel}
-          className="blog-detail-image"
-          role="img"
-          style={{ background: post.gradient }}
-        />
+        <PostImage post={post} className="blog-detail-image" />
 
         <div className="blog-detail-copy">
           <div className="blog-meta-row">

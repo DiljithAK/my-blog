@@ -240,6 +240,15 @@
     linear-gradient(135deg, #ffffff 0%, #efefef 40%, #bdbdbd 100%);
 }
 
+.hero-profile-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .hero-orbit {
   position: absolute;
   border: 1px solid rgba(0, 0, 0, 0.18);
@@ -309,8 +318,29 @@
 .blog-card-image {
   display: flex;
   align-items: end;
+  justify-content: stretch;
   min-height: 15rem;
   padding: 1.25rem;
+}
+
+.blog-card-image.has-post-image {
+  padding: 0;
+}
+
+.blog-card-image img,
+.blog-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-card-image.has-post-image img {
+  min-height: 15rem;
+}
+
+.blog-detail-image.has-post-image img {
+  min-height: 24rem;
 }
 
 .blog-card-image span {
@@ -409,6 +439,11 @@
 .blog-detail-image {
   min-height: 24rem;
   border-radius: 1.75rem;
+  overflow: hidden;
+}
+
+.blog-detail-image.has-post-image {
+  display: block;
 }
 
 .blog-lead {

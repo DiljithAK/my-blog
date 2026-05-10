@@ -1,3 +1,5 @@
+import profilePhoto from '../assets/profile/ProfilePhoto.jpg'
+
 export function HeroSection() {
   return (
     <section className="hero-section">
@@ -19,14 +21,11 @@ export function HeroSection() {
       </div>
 
       <div className="hero-visual" aria-hidden="true">
-        {/* I need to add an image here */}
-        {/* <div className="hero-orbit hero-orbit-large" />
-        <div className="hero-orbit hero-orbit-small" />
-        <div className="hero-code-card">
-          <span>const craft = vision + systems + empathy;</span>
-          <span>publish(ideas.with.depth());</span>
-          <span>while (learning) keep_building();</span>
-        </div> */}
+        <img
+          className="hero-profile-photo"
+          src={profilePhoto}
+          alt=""
+        />
       </div>
     </section>
   )

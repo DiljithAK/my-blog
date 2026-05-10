@@ -1,6 +1,7 @@
 import type { BlogPost } from '../types'
 import { CommentIcon, HeartIcon } from './Icons'
 import { NavLink } from './NavLink'
+import { PostImage } from './PostImage'
 
 type BlogCardProps = {
   post: BlogPost
@@ -10,14 +11,11 @@ export function BlogCard({ post }: BlogCardProps) {
   return (
     <article className="blog-card">
       <NavLink href={`/posts/${post.slug}`} className="blog-card-link">
-        <div
-          aria-label={post.imageLabel}
+        <PostImage
+          post={post}
           className="blog-card-image"
-          role="img"
-          style={{ background: post.gradient }}
-        >
-          <span>{post.imageLabel}</span>
-        </div>
+          showLabelOnFallback
+        />
 
         <div className="blog-card-body">
           <div className="blog-meta-row">

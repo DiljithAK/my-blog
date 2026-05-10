@@ -25,6 +25,7 @@ export type BlogPost = {
   featured: boolean
   popular: boolean
   recent: boolean
+  imageSrc?: string
   gradient: string
   imageLabel: string
   comments: Comment[]

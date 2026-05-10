@@ -1,5 +1,12 @@
 import type { BlogPost, Category } from '../types'
 
+import frontendScaleImage from '../assets/blogs/ScalableFrontendSystems.png'
+import aiPairProgrammingWorksBestWhenTheBoundariesAreClear from '../assets/blogs/AiPairProgrammingWorksBestWhenTheBoundariesAreClear.png'
+import kindFeedbackIsATechnicalSkill from '../assets/blogs/KindFeedbackIsATechnicalSkill.png'
+import shippingBlockchainProductsWithoutFallingIntoHype from '../assets/blogs/ShippingBlockchainProductsWithoutFallingIntoHype.png'
+import buildingASustainableCreatorRhythmAlongsideFullTimeWork from '../assets/blogs/BuildingASustainableCreatorRhythmAlongsideFullTimeWork.png'
+import semanticHTMLStillMattersMoreThanFancyUITricks from '../assets/blogs/SemanticHTMLStillMattersMoreThanFancyUITricks.png'
+
 export const categories: Category[] = [
   'Web Development',
   'AI Development',
@@ -27,6 +34,7 @@ export const blogPosts: BlogPost[] = [
     featured: true,
     popular: true,
     recent: false,
+    imageSrc: frontendScaleImage,
     gradient: 'linear-gradient(135deg, #f7f7f7 0%, #d9d9d9 45%, #8b8b8b 100%)',
     imageLabel: 'Component grid with layered cards',
     comments: [
@@ -64,6 +72,7 @@ export const blogPosts: BlogPost[] = [
     featured: true,
     popular: true,
     recent: true,
+    imageSrc: aiPairProgrammingWorksBestWhenTheBoundariesAreClear,
     gradient: 'linear-gradient(135deg, #ffffff 0%, #ececec 35%, #6f6f6f 100%)',
     imageLabel: 'Terminal window with abstract AI pulse',
     comments: [
@@ -108,6 +117,7 @@ export const blogPosts: BlogPost[] = [
     featured: true,
     popular: false,
     recent: false,
+    imageSrc: shippingBlockchainProductsWithoutFallingIntoHype,
     gradient: 'linear-gradient(135deg, #fbfbfb 0%, #d8d8d8 40%, #4f4f4f 100%)',
     imageLabel: 'Network lines over a minimal ledger',
     comments: [
@@ -138,6 +148,7 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     popular: true,
     recent: true,
+    imageSrc: kindFeedbackIsATechnicalSkill,
     gradient: 'linear-gradient(135deg, #ffffff 0%, #efefef 42%, #707070 100%)',
     imageLabel: 'Conversation bubbles over review notes',
     comments: [
@@ -175,6 +186,7 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     popular: false,
     recent: true,
+    imageSrc: buildingASustainableCreatorRhythmAlongsideFullTimeWork,
     gradient: 'linear-gradient(135deg, #ffffff 0%, #f3f3f3 38%, #8d8d8d 100%)',
     imageLabel: 'Desk scene with journal and calm lighting',
     comments: [
@@ -205,6 +217,7 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     popular: false,
     recent: false,
+    imageSrc: semanticHTMLStillMattersMoreThanFancyUITricks,
     gradient: 'linear-gradient(135deg, #fcfcfc 0%, #e7e7e7 36%, #616161 100%)',
     imageLabel: 'Code brackets layered over paper texture',
     comments: [
