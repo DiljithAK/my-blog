@@ -1,7 +1,7 @@
 export function ContactPage() {
   return (
     <div className="page-stack page-narrow">
-      <section className="page-intro prose-panel">
+      <section className="page-intro prose-panel contact-page-intro">
         <p className="section-eyebrow">Contact</p>
         <h1>Let’s talk...</h1>
         <p className="section-copy">
@@ -9,14 +9,14 @@ export function ContactPage() {
           conversations, or a thoughtful exchange on software craft.
         </p>
 
-        <div className="contact-card">
-          <div>
+        <div className="contact-card contact-page-details">
+          <div className="contact-detail">
             <h2>Email</h2>
-            <p>dk.blog.studio@example.com</p>
+            <p>diljithak1@gmail.com</p>
           </div>
-          <div>
-            <h2>Response Style</h2>
-            <p>Friendly, practical, and usually within two working days.</p>
+          <div className="contact-detail">
+            <h2>Response Time</h2>
+            <p>Within 24 hours.</p>
           </div>
         </div>
       </section>

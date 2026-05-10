@@ -11,7 +11,7 @@ export function Navbar() {
       </NavLink>
 
       <nav className="topbar-nav" aria-label="Primary">
-        <details className="category-menu">
+        {/* <details className="category-menu">
           <summary>Categories</summary>
           <div className="category-dropdown">
             {categories.map((category) => (
@@ -20,7 +20,7 @@ export function Navbar() {
               </span>
             ))}
           </div>
-        </details>
+        </details> */}
 
         <NavLink href="/about" className="nav-item">
           About Me
