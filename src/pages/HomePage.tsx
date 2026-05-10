@@ -1,4 +1,4 @@
-import { blogPosts, featuredPosts, popularPosts, recentPosts } from '../data/blogs'
+import { featuredPosts, popularPosts, recentPosts } from '../data/blogs'
 import { ArrowRightIcon } from '../components/Icons'
 import { HeroSection } from '../components/HeroSection'
 import { NavLink } from '../components/NavLink'
