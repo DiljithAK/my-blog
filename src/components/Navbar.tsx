@@ -32,7 +32,6 @@ export function Navbar() {
 
       <div className="topbar-actions">
         <div className="search-group">
-          <SearchIcon />
           <input
             aria-label="Search blog topics"
             className="search-input"
@@ -40,6 +39,7 @@ export function Navbar() {
             type="search"
           />
         </div>
+        <SearchIcon />
         <SocialLinks />
       </div>
     </header>

@@ -39,10 +39,18 @@ export function BlogDetailPage({ slug }: BlogDetailPageProps) {
             <span>{post.readTime}</span>
           </div>
 
-          <h1>{post.title}</h1>
-          <p className="blog-lead">{post.excerpt}</p>
+          <div className="detail-engagement">
+            <h1>{post.title}</h1>
+            <p className="blog-lead">{post.excerpt}</p>
+          </div>
 
-          <div className="engagement-row detail-engagement">
+          <div className="blog-content detail-engagement">
+            {post.content.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+
+          <div className="engagement-row">
             <span className="engagement-item">
               <HeartIcon />
               {post.likes} likes
@@ -52,12 +60,6 @@ export function BlogDetailPage({ slug }: BlogDetailPageProps) {
               {post.commentsCount} comments
             </span>
           </div>
-
-          <div className="blog-content">
-            {post.content.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
         </div>
       </article>
 
@@ -65,11 +67,6 @@ export function BlogDetailPage({ slug }: BlogDetailPageProps) {
         <div className="section-header">
           <div>
             <p className="section-eyebrow">Reader Comments</p>
-            <h2>Hardcoded conversations for the static experience</h2>
-            <p className="section-copy">
-              This screen is static, so the comments and engagement numbers are
-              intentionally fixed for now.
-            </p>
           </div>
         </div>
 
